@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="es-CL">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="description" content="Boceto MVP para administrar el Condominio Santa Marta: pagos con Mercado Pago, noticias, calendario, finanzas y fondo de reserva.">
+  <meta name="robots" content="noindex, nofollow">
+  <title>Condominio Santa Marta</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 30'%3E%3Cpath d='M1 15 9 8l8 7v14H1z' fill='%231d4e89'/%3E%3Cpath d='M13 12 21 4l8 8v17H13z' fill='%23f2b705'/%3E%3Cpath d='M25 16l7-6 7 6v13H25z' fill='%231d4e89' opacity='.6'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400&family=IBM+Plex+Mono:wght@400;500;600&family=Schibsted+Grotesk:wght@500;700;800&display=swap">
+  <script type="module" crossorigin src="./assets/index-BGv3lwcK.js"></script>
+  <link rel="stylesheet" crossorigin href="./assets/index-CVn0ccoP.css">
+</head>
+<body>
+  <a class="skip" href="#main">Saltar al contenido</a>
+
+  <header class="topbar">
+    <div class="topbar-in">
+      <a class="brand" href="#inicio" data-act="role" data-role="residente" aria-label="Santa Marta, ir al inicio">
+        <svg viewBox="0 0 40 30" aria-hidden="true">
+          <path class="roof" d="M1 15 9 8l8 7v14H1z" fill="var(--brand)"/>
+          <path class="roof" d="M13 12 21 4l8 8v17H13z" fill="var(--aromo)"/>
+          <path class="roof" d="M25 16l7-6 7 6v13H25z" fill="var(--brand)" opacity=".6"/>
+        </svg>
+        <span><b>Santa Marta</b><small>Condominio · 306 casas</small></span>
+      </a>
+      <span class="demo">Boceto · datos ficticios</span>
+      <div class="roles" id="roles" role="group" aria-label="Cambiar de vista">
+        <span class="roles-thumb" aria-hidden="true"></span>
+        <button type="button" data-act="role" data-role="residente" aria-pressed="true">Residente</button>
+        <button type="button" data-act="role" data-role="admin" aria-pressed="false">Administración</button>
+      </div>
+      <button type="button" class="icon-btn" id="motion-btn" data-act="motion" aria-label="Animaciones"></button>
+      <button type="button" class="icon-btn" id="theme-btn" data-act="theme" aria-label="Cambiar tema"></button>
+      <div class="who" id="who"></div>
+    </div>
+  </header>
+
+  <div class="shell">
+    <aside class="side">
+      <nav class="nav" id="nav" aria-label="Secciones"></nav>
+      <p class="side-note" id="side-note"></p>
+    </aside>
+    <p class="demo-banner">Boceto con datos ficticios. Ningún pago es real.</p>
+    <main id="main" tabindex="-1"></main>
+  </div>
+
+  <div id="modal" hidden></div>
+  <div class="tip" id="tip" role="tooltip" hidden></div>
+  <div id="toasts" role="status" aria-live="polite"></div>
+
+</body>
+</html>
